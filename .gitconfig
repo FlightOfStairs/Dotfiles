@@ -1,0 +1,11 @@
+[color]
+	ui = auto
+[user]
+	name = Alistair Smith
+	email = alistairsmith@flightofstairs.org
+[alias]
+	permission-reset = "git diff diff -p | grep -E '^(diff|old mode|new mode)' | sed -e 's/^old/NEW/;s/^new/old/;s/^NEW/new/' | git apply"
+[core]
+	editor = vim
+[push]
+	default = matching
